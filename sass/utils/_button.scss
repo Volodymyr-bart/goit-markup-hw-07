@@ -79,3 +79,44 @@
         0px 2px 2px rgba(0, 0, 0, 0.12);
 
 }
+
+.button-wrap {
+    display: flex;
+    align-items: center;
+}
+
+.button-wrap-title {
+    margin-right: 10px;
+}
+
+.button-wrap .button-wrap-svg {
+    fill: var(--primary-bg-color);
+}
+
+/*  */
+.button-send {
+    display: inline-flex;
+}
+
+.button-send::after {
+    margin-left: 10px;
+    content: '';
+    width: 24px;
+    height: 24px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    background-image: url(../images/icon-send.png);
+
+
+}
+
+.button-send:hover,
+.button-send:focus,
+.button-send:hover .button-wrap-title,
+.button-send:focus .button-wrap-title,
+.button-send:hover .button-wrap-svg,
+.button-send:focus .button-wrap-svg {
+    cursor: pointer;
+
+}

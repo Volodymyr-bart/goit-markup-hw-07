@@ -4,104 +4,13 @@ header {
     padding-bottom: 25px;
 }
 
-.header-container {
+.page-header {
     display: flex;
-
     align-items: center;
     font-weight: 500;
     line-height: 1.14;
     letter-spacing: 0.02em;
-
     text-decoration: none;
 }
 
-.header-container .webstudio {
-    display: block;
-    margin-right: 93px;
-}
 
-/* Navigation */
-
-.menu-list {
-    display: block;
-    display: flex;
-}
-
-.menu-list .menu-item+.menu-item {
-    margin-left: 50px;
-}
-
-.menu-contact {
-    display: block;
-    display: flex;
-    margin-left: auto;
-}
-
-.menu-contact .menu-item+.menu-item {
-    margin-left: 50px;
-}
-
-/* Позначення поточної сторінки */
-.menu-list .menu-link.curent {
-    color: var(--primary-btn-bg-color);
-}
-
-.menu-link {
-    position: relative;
-
-    padding-top: 32px;
-    padding-bottom: 32px;
-
-    color: var(--title-text-color);
-    text-decoration: none;
-
-    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.menu-link.curent::after {
-    position: absolute;
-    left: 0;
-    bottom: 0;
-
-    content: '';
-    display: block;
-    width: 100%;
-    height: 4px;
-    background-color: var(--primary-btn-bg-color);
-    border-radius: 2px;
-}
-
-.contact-item {
-    color: var(--primary-text-color);
-    text-decoration: none;
-
-    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.webstudio {
-    font-family: 'Raleway';
-    font-weight: bold;
-    font-size: 26px;
-    line-height: 1.19;
-    text-decoration: none;
-    color: #000000;
-}
-
-.webstudio span {
-    color: #2196f3;
-}
-
-.menu-item .contact-item {
-    display: inline-flex;
-    align-items: center;
-
-}
-
-.icon-message,
-.icon-phone {
-    fill: var(--primary-text-color);
-    margin-right: 10px;
-
-    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-
-}

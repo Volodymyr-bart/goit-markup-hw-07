@@ -3,6 +3,17 @@ body {
     font-size: 14px;
 }
 
+.section-title {
+    display: block;
+    margin-bottom: 50px;
+
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 1.16;
+    text-align: center;
+    color: var(--title-text-color);
+}
+
 /*Text*/
 .text {
     letter-spacing: 0.03em;

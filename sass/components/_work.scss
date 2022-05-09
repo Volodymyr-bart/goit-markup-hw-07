@@ -1,30 +1,19 @@
 /*Section work--------------------------------------------------------------*/
-.work.section {
+.work {
     padding-top: 0;
-    text-align: center;
+    text-align: center;        
 }
-
-.section-title {
-    display: block;
-    margin-bottom: 50px;
-
-    font-weight: bold;
-    font-size: 36px;
-    line-height: 1.16;
-    text-align: center;
-    color: var(--title-text-color);
-}
-
 
 .work-list {
     display: flex;
     justify-content: center;
+    &__item {
+            position: relative;
+        }
+    &__item + &__item {
+        margin-left: 30px;
+    }
 }
-
-.work-list .item {
-    position: relative;
-}
-
 
 .thumb-bg {
     position: absolute;
@@ -32,7 +21,6 @@
     height: 70px;
     background: rgba(47, 48, 58, 0.8);
     bottom: 0;
-
 
     font-weight: 700;
     font-size: 14px;
@@ -42,18 +30,11 @@
     text-transform: uppercase;
     align-items: center;
     color: var(--primary-bg-color);
-
-}
-
-.thumb-bg .thumb-bg-p {
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
-    white-space: nowrap;
-}
-
-
-.work-list .item+.item {
-    margin-left: 30px;
+    &__text {
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+            white-space: nowrap;
+    }
 }

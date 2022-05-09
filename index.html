@@ -16,21 +16,29 @@
 <body>
     <div>
         <header>
-            <div class="container header-container">
-                <a href="./index.html" class="webstudio"><span class="web">Web</span>Studio</a>
+            <div class="page-header container ">
+                <a href="./index.html" class="header__logo-link logo-link logo-link--color-dark">
+                    <span class="logo-link--color-blue">Web</span>Studio
+                </a>
                 <nav class="navigation">
-                    <ul class="menu-list">
-                        <li class="menu-item"><a href="./index.html" class="menu-link curent">Студия</a></li>
-                        <li class="menu-item"><a href="./portfolio.html" class="menu-link">Портфолио</a></li>                        
-                        <li class="menu-item"><a href="./contacts.html" class="menu-link">Контакты</a></li>                        
+                    <ul class="navigation-list">
+                        <li class="navigation-list__item">
+                            <a href="./index.html" class="navigation-list__link navigation-list__link--curent">Студия</a>
+                        </li>
+                        <li class="navigation-list__item">
+                            <a href="./portfolio.html" class="navigation-list__link">Портфолио</a>
+                        </li>                        
+                        <li class="navigation-list__item">
+                            <a href="./contacts.html" class="navigation-list__link">Контакты</a>
+                        </li>                        
                     </ul>                                   
                 </nav>
                 <ul class="menu-contact">
-                    <li class="menu-item"><a href="mailto:info@devstudio.com" class="contact-item">
+                    <li class="menu-contact__item"><a href="mailto:info@devstudio.com" class="menu-contact__link">
                         <svg class="icon-message" width="16px" height="12px">
                             <use href="./images/symbol-defs.svg#icon-message"></use>
                         </svg>info@devstudio.com</a></li>
-                    <li class="menu-item"><a href="tel:+380961111111" class="contact-item">
+                    <li class="menu-contact__item"><a href="tel:+380961111111" class="menu-contact__link">
                         <svg class="icon-phone" width="10px" height="16px">
                             <use href="./images/symbol-defs.svg#icon-phone"></use>
                         </svg>+38 096 111 11 11</a></li>
@@ -42,53 +50,53 @@
         <main>
             <section class="bussines">
                 <div class="container">
-                    <h1 class="bussines-h1">Эффективные решения <br> для вашего бизнеса</h1>
+                    <h1 class="bussines__title">Эффективные решения <br> для вашего бизнеса</h1>
                     <button type="button" class="button button-buy" data-modal-open>Заказать услугу</button>                
                 </div>                
             </section>
 
-            <section class="bussines-advantages section">
+            <section class="advantages section">
                 <div class="container">
                     <h2 class="visually-hidden">Наши особености</h2>
-                    <ul class="bussines-list">
-                        <li class="item">
-                            <div class="item-div">
+                    <ul class="advantages-list">
+                        <li class="advantages-list__item">
+                            <div class="advantages-div">
                                 <svg class="bussines-icon" width="70" height="70" >
                                     <use href="./images/symbol-defs.svg#icon-antenna"></use>
                                 </svg>
                             </div>
-                            <h3 class="advantages-h text">Внимание к деталям</h3>
-                            <p class="advantages-p text">Идейные соображения, а также начало повседневной работы по формированию
+                            <h3 class="advantages-list__title text">Внимание к деталям</h3>
+                            <p class="advantages-list__text text">Идейные соображения, а также начало повседневной работы по формированию
                                 позиции.</p>
                         </li>
-                        <li class="item">
-                            <div class="item-div">
+                        <li class="advantages-list__item">
+                            <div class="advantages-div">
                                 <svg class="bussines-icon" width="70" height="70">
                                     <use href="./images/symbol-defs.svg#icon-clock"></use>
                                 </svg>
                             </div>
-                            <h3 class="advantages-h text">Пунктуальность</h3>
-                            <p class="advantages-p text">Задача организации, в особенности же рамки и место обучения кадров влечет за
+                            <h3 class="advantages-list__title text">Пунктуальность</h3>
+                            <p class="advantages-list__text text">Задача организации, в особенности же рамки и место обучения кадров влечет за
                                 собой.</p>
                         </li>
-                        <li class="item">
-                            <div class="item-div">
+                        <li class="advantages-list__item">
+                            <div class="advantages-div">
                                 <svg class="bussines-icon" width="70" height="70">
                                     <use href="./images/symbol-defs.svg#icon-diagram" ></use>
                                 </svg>
                             </div>
-                            <h3 class="advantages-h text">Планирование</h3>
-                            <p class="advantages-p text">Равным образом консультация с широким активом в значительной степени
+                            <h3 class="advantages-list__title text">Планирование</h3>
+                            <p class="advantages-list__text text">Равным образом консультация с широким активом в значительной степени
                                 обуславливает.</p>
                         </li>
-                        <li class="item">
-                            <div class="item-div">
+                        <li class="advantages-list__item">
+                            <div class="advantages-div">
                                 <svg class="bussines-icon" width="70" height="70"> 
                                     <use href="./images/symbol-defs.svg#icon-astronaut"></use>
                                 </svg>
                             </div>
-                            <h3 class="advantages-h text">Современные технологии</h3>
-                            <p class="advantages-p text">Значимость этих проблем настолько очевидна, что реализация плановых заданий.
+                            <h3 class="advantages-list__title text">Современные технологии</h3>
+                            <p class="advantages-list__text text">Значимость этих проблем настолько очевидна, что реализация плановых заданий.
                             </p>
                         </li>
                     </ul>
@@ -97,24 +105,25 @@
             
             <section class="work section">
                 <div class="container">
-                    <h2 class="section-title text">Чем мы занимаемся</h2>
+                    <h2 class="section-title
+                     text">Чем мы занимаемся</h2>
                     <ul class="work-list">
-                        <li class="item">
+                        <li class="work-list__item">
                             <img src="./images/image.jpg" alt="Зображення: З алгоритма переносимо на пк" width="370">
                             <div class="thumb-bg">
-                                <p class="thumb-bg-p">Десктопные приложения</p>
+                                <p class="thumb-bg__text">Десктопные приложения</p>
                             </div>
                         </li>
-                        <li class="item">
+                        <li class="work-list__item">
                             <img src="./images/image(1).jpg" alt="Зображення: Відображення блоків на телефоні" width="370">
                             <div class="thumb-bg">
-                                <p class="thumb-bg-p">Мобильные приложения</p>
+                                <p class="thumb-bg__text">Мобильные приложения</p>
                             </div>
                         </li>
-                        <li class="item">
+                        <li class="work-list__item">
                             <img src="./images/image(2).jpg" alt="Зображення: Градієнт" width="370">
                             <div class="thumb-bg">
-                                <p class="thumb-bg-p">Дизайнерские решения</p>
+                                <p class="thumb-bg__text">Дизайнерские решения</p>
                             </div>
                         </li>
                     </ul>                
@@ -131,22 +140,22 @@
                                 <h3 class="text team-h3">Игорь Демьяненко</h3>
                                 <p class="team-p text">Product Designer</p>
                                 <ul class="social-list">
-                                    <li class="social-item"><a href="" class="icon-link">
+                                    <li class="social-item"><a href="" class="icon-link icon-link--fill-grey">
                                         <svg class="icon" width="20" height="20">
                                             <use href="./images/symbol-defs.svg#icon-instagram"></use>
                                         </svg>
                                     </a></li>
-                                    <li class="social-item"><a href="" class="icon-link">
+                                    <li class="social-item"><a href="" class="icon-link icon-link--fill-grey">
                                         <svg class="icon" width="20" height="20">
                                             <use href="./images/symbol-defs.svg#icon-twitter"></use>
                                         </svg>
                                     </a></li>
-                                    <li class="social-item"><a href="" class="icon-link">
+                                    <li class="social-item"><a href="" class="icon-link icon-link--fill-grey">
                                         <svg class="icon" width="20" height="20">
                                             <use href="./images/symbol-defs.svg#icon-facebook"></use>
                                         </svg>
                                     </a></li>
-                                    <li class="social-item"><a href="" class="icon-link">
+                                    <li class="social-item"><a href="" class="icon-link icon-link--fill-grey">
                                         <svg class="icon" width="20" height="20">
                                             <use href="./images/symbol-defs.svg#icon-linkedin"></use>
                                         </svg>
@@ -289,7 +298,7 @@
         <footer class="footer-container">
             <div class="container">
                 <div class="contacts">
-                    <a href="./index.html" class="webstudio webstudio-footer"><span class="web">Web</span>Studio</a>
+                    <a href="./index.html" class="footer__logo-link logo-link logo-link--color-white"><span class="logo-link--color-blue">Web</span>Studio</a>
                     <address class="address">
                         <ul class="list">
                             <li class="item">
@@ -308,22 +317,22 @@
                 <div class="enter-link">
                     <p class="text-enter text">присоединяйтесь</p>
                     <ul class="social-list">
-                        <li class="footer-social-item"><a href="" class="icon-link">
+                        <li class="footer-social-item"><a href="" class="icon-link icon-link--bg-blue">
                                 <svg class="icon" width="20" height="20">
                                     <use href="./images/symbol-defs.svg#icon-instagram"></use>
                                 </svg>
                             </a></li>
-                        <li class="footer-social-item"><a href="" class="icon-link">
+                        <li class="footer-social-item"><a href="" class="icon-link icon-link--bg-blue">
                                 <svg class="icon" width="20" height="20">
                                     <use href="./images/symbol-defs.svg#icon-twitter"></use>
                                 </svg>
                             </a></li>
-                        <li class="footer-social-item"><a href="" class="icon-link">
+                        <li class="footer-social-item"><a href="" class="icon-link icon-link--bg-blue">
                                 <svg class="icon" width="20" height="20">
                                     <use href="./images/symbol-defs.svg#icon-facebook"></use>
                                 </svg>
                             </a></li>
-                        <li class="footer-social-item"><a href="" class="icon-link">
+                        <li class="footer-social-item"><a href="" class="icon-link icon-link--bg-blue">
                                 <svg class="icon" width="20" height="20">
                                     <use href="./images/symbol-defs.svg#icon-linkedin"></use>
                                 </svg>

@@ -1,0 +1,39 @@
+.icon-message,
+.icon-phone {
+    fill: var(--primary-text-color);
+    margin-right: 10px;
+
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);    
+}
+
+.icon-link {
+    display: flex;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    align-items: center;
+    justify-content: center;
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    &--fill-grey{
+        fill: #AFB1B8;
+        background-color: var(--primary-bg-color);
+        &:hover,
+        &:focus {
+                background-color: var(--primary-btn-bg-color);
+                cursor: pointer;
+                fill: #FFFFFF;
+            }          
+    }
+        
+    &--bg-blue{
+        background-color: rgba(255, 255, 255, 0.1);
+        fill: #FFFFFF;
+        &:hover,
+        &:focus {
+                background-color:var(--primary-btn-bg-color);
+                cursor: pointer;
+                fill: #FFFFFF;
+            }           
+    }    
+}

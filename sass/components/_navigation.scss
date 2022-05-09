@@ -1,0 +1,67 @@
+/* Navigation */
+
+.navigation-list {
+    display: block;
+    display: flex;
+    &__item + &__item{
+        margin-left: 50px;
+    }
+    &__link{
+        position: relative;
+        padding-top: 32px;
+        padding-bottom: 32px;
+        color: var(--title-text-color);
+        text-decoration: none;
+        transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+        
+        &:hover,
+        &:focus {
+                cursor: pointer;
+                color: var(--primary-btn-bg-color);
+        }
+
+        &--curent{
+        color: var(--primary-btn-bg-color);
+
+        &::after {
+                position: absolute;
+                left: 0;
+                bottom: 0;
+        
+                content: '';
+                display: block;
+                width: 100%;
+                height: 4px;
+                background-color: var(--primary-btn-bg-color);
+                border-radius: 2px;
+            }
+        } 
+    }       
+    
+}
+
+.menu-contact {
+    display: block;
+    display: flex;
+    margin-left: auto;
+    &__item + &__item {
+            margin-left: 50px;
+    }
+    &__link {
+        display: inline-flex;
+        align-items: center;
+        color: var(--primary-text-color);
+        text-decoration: none;
+        transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+        &:hover,
+        &:focus,
+        &:hover .icon-phone,
+        &:focus .icon-phone,
+        &:hover .icon-message,
+        &:focus .icon-message {
+            fill: var(--primary-btn-bg-color);
+            color: var(--primary-btn-bg-color);
+            cursor: pointer;
+        }
+    }
+}

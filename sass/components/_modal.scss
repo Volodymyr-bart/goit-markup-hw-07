@@ -28,12 +28,11 @@
     justify-content: center;
     background: #FFFFFF;
     border: 1px solid rgba(0, 0, 0, 0.1);
-    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1),
-}
-
-.modal-close:hover,
-.modal-close:focus {
-    fill: var(--primary-btn-bg-color);
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    &:hover,
+    &:focus {
+        fill: var(--primary-btn-bg-color);
+    }
 }
 
 .modal-title {
@@ -59,16 +58,6 @@
     margin-top: 10px;
 }
 
-.modal-input,
-.modal-comment {
-    outline: none;
-}
-
-.modal-input:focus,
-.modal-comment:focus {
-    border: 1px solid var(--primary-btn-bg-color)
-}
-
 .modal-form .input-text {
     margin-bottom: 4px;
 }
@@ -79,10 +68,15 @@
     border-radius: 4px;
     border: 1px solid rgba(33, 33, 33, 0.2);
     background-color: transparent;
-    padding-left: 42px;
+    padding-left: 42px;    
+    outline: none;  
+
+    &:focus{
+        border: 1px solid var(--primary-btn-bg-color)
+    }
 }
 
-.modal-input:focus+.input-icon {
+.modal-input:focus + .input-icon {
     fill: var(--primary-btn-bg-color);
 }
 
@@ -99,6 +93,9 @@
     left: 14px;
     top: 50%;
     transform: translateY(-50%);
+    .modal-input:focus + & {
+            fill: var(--primary-btn-bg-color);
+        }
 }
 
 .modal-comment {
@@ -109,6 +106,10 @@
     border: 1px solid rgba(33, 33, 33, 0.2);
     background-color: transparent;
     resize: none;
+    outline: none;       
+    &:focus {
+        border: 1px solid var(--primary-btn-bg-color)
+    }
 }
 
 .form-license {
@@ -124,18 +125,15 @@
 }
 
 .icon-cheked {
-    margin-right: 8px;
-    /* width: 16px;
-  height: 15px; */
+    margin-right: 8px;   
     border: 2px solid #212121;
     border-radius: 3px;
     align-items: center;
-    justify-content: center;
-    /* background-color: var(--primary-btn-bg-color); */
+    justify-content: center;    
     fill: transparent;
 }
 
-.modal-license:checked+.form-license-text .icon-cheked {
+.modal-license:checked + .form-license-text .icon-cheked {
     background-color: var(--primary-btn-bg-color);
     fill: #ffffff;
 }
