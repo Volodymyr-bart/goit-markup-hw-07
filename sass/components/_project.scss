@@ -18,7 +18,19 @@
 }
 
 .project-item-link {
-    transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1)
+    transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    &:hover,
+    &:focus,
+    &:hover .thumb-text,
+    &:focus .thumb-text {
+        display: inline-block;
+        box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12),
+                0px 4px 4px rgba(0, 0, 0, 0.06),
+                1px 4px 6px rgba(0, 0, 0, 0.16);
+        cursor: pointer;
+        transform: translateY(0%);
+    
+    }
 }
 
 
@@ -50,20 +62,6 @@
 }
 
 /* himichu++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
-
-
-.project-item-link:hover,
-.project-item-link:focus,
-.project-item-link:hover .thumb-text,
-.project-item-link:focus .thumb-text {
-    display: inline-block;
-    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12),
-        0px 4px 4px rgba(0, 0, 0, 0.06),
-        1px 4px 6px rgba(0, 0, 0, 0.16);
-    cursor: pointer;
-    transform: translateY(0%);
-
-}
 
 .item .item-text {
     padding: 20px 24px;

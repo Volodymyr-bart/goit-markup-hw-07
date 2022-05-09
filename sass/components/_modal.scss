@@ -54,7 +54,7 @@
     color: var(--primary-text-color);
 }
 
-.modal-form .form-field+.form-field {
+.modal-form .form-field + .form-field {
     margin-top: 10px;
 }
 
@@ -131,19 +131,17 @@
     align-items: center;
     justify-content: center;    
     fill: transparent;
+
+    .modal-license:checked+.form-license-text & {
+        background-color: var(--primary-btn-bg-color);
+        fill: #ffffff;
+    }
+    .modal-license:focus+.form-license-text & {
+        outline: none;
+        border-color: var(--primary-btn-bg-color);
+    }
 }
 
-.modal-license:checked + .form-license-text .icon-cheked {
-    background-color: var(--primary-btn-bg-color);
-    fill: #ffffff;
-}
-
-
-.modal-license:focus+.form-license-text .icon-cheked {
-    outline: none;
-    border-color: var(--primary-btn-bg-color);
-
-}
 
 .form-license-link {
     outline: none;
